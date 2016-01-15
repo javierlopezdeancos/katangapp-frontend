@@ -5,7 +5,7 @@ var Geolocalizer = React.createClass ({
   render: function () {
     return (
       <button className="ktg-btn--geolocalizer">
-		  </button>
+      </button>
     );
   }
 });

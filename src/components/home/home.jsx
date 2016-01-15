@@ -7,13 +7,13 @@ var Slider = require('../slider/slider');
 var Home = React.createClass ({
   render: function () {
     return (
-    	<main className="ktg-home">
-    		<header className="ktg-home__header">
-    			<h1 className="ktg-home__title">katanga</h1>
+      <main className="ktg-home">
+        <header className="ktg-home__header">
+          <h1 className="ktg-home__title">katanga</h1>
           <LogoVerticalWhite />
-    		</header>
+        </header>
         <form id="ktg-form-metersAround">
-      	 <Slider />
+        <Slider />
          <Geolocalizer />
         </form>
       </main>

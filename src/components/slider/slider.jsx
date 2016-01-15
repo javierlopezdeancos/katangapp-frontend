@@ -51,7 +51,7 @@ var Slider = React.createClass ({
             {this.state.meters}
             <span className="ktg-slider__output-unit">metros</span>
         </output>
-		  </div>
+      </div>
     );
   }
 });
