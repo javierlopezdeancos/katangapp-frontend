@@ -23,6 +23,7 @@
   "keywords": [],
   "author": "Craftsmanship Toledo",
   "devDependencies": {
+    "autoprefixer": "^6.3.0",
     "babel-core": "^6.0.0",
     "babel-eslint": "^5.0.0-beta4",
     "babel-loader": "^6.0.0",
