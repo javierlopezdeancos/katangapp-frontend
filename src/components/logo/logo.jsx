@@ -1,15 +1,16 @@
 import React from 'react';
 
-var LogoVerticalWhite = React.createClass ({
-  render: function () {
+export default class LogoVerticalWhite extends React.Component {
+  constructor( props ) {
+      super( props );
+  }
+  render() {
     return (
-    	<figure className="ktg-logo" >
-		  <img className="ktg-logo__icon" src="../../images/logo.png" />
-		  <figcaption className="ktg-logo__tipo">katanga</figcaption>
-		</figure>
+      <h1 className="ktg-logo">
+        <a className="ktg-logo__icon" href="index" title="katanga">Katanga</a>
+      </h1>
     );
   }
-});
+}
 
-module.exports = LogoVerticalWhite;
 
