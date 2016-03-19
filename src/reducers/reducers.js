@@ -37,9 +37,13 @@ const busStopsAroundMe = ( state=initialState, action ) => {
       let busStops = requestBusStopsAroundMe( action.coors, action.meters );
       return busStops
     case SET_METERS_AROUND_ME:
-      return Object.assign( state, { meters: action.meters } );
+      return Object.assign({},
+        state,
+        {busStopsAroundMe: Object.assign({}, state.busStopsAroundMe, {meters: action.meters})});
     case SET_COORS_AROUND_ME:
-      return  Object.assign( state, { coors: action.coors } );
+      return Object.assign({},
+        state,
+        {busStopsAroundMe: Object.assign({}, state.busStopsAroundMe, {coors: action.coors})});
     default:
       return state;
   }
