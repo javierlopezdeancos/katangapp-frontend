@@ -32,13 +32,11 @@ function requestBusStopsAroundMe( coors, meters ) {
 //
 
 const busStopsAroundMe = ( state=initialState, action ) => {
-  console.log(state);
   switch ( action.type ) {
     case GET_BUS_STOPS_AROUND_ME:
       let busStops = requestBusStopsAroundMe( action.coors, action.meters );
       return busStops
     case SET_METERS_AROUND_ME:
-      console.log(state);
       return Object.assign({}, state, { busStopsAroundMe: { meters: action.meters } });
     case SET_COORS_AROUND_ME:
       return  Object.assign({}, state, { busStopsAroundMe: { coors: action.coors } });
