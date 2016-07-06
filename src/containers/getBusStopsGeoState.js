@@ -1,6 +1,6 @@
 import { connect } from           'react-redux'
 import { browserHistory } from    'react-router'
-import Promise from               'promise-polyfill'
+import Promise from               'promise'
 
 import getBusStopsAroundMe from   '../services/busStops.js'
 import Home from                  '../components/home/home.jsx'
